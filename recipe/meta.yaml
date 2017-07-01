@@ -11,29 +11,35 @@ source:
 
 build:
   number: 0
-  skip: True  # [win]
+  skip: True  # [win and py36]
+  features:
+    - vc9  # [win and py27]
+    - vc10  # [win and py34]
+    - vc14  # [win and (py35 or py36)]
 
 requirements:
   build:
     - cmake
-    # - gtest
-    # - uriparser
-    # - minizip
+    - python  # [win]
     - expat 2.1.*
     - zlib 1.2.*
     - boost 1.64.*
+    - vc 9  # [win and py27]
+    - vc 10  # [win and py34]
+    - vc 14  # [win and (py35 or py36)]
   run:
-    # - gtest
-    # - uriparser
-    # - minizip
     - expat 2.1.*
     - zlib 1.2.*
     - boost 1.64.*
+    - vc 9  # [win and py27]
+    - vc 10  # [win and py34]
+    - vc 14  # [win and (py35 or py36)]
 
 test:
   commands:
     - test -f $PREFIX/lib/libkmlbase.so.1  # [linux]
     - test -f $PREFIX/lib/libkmlbase.dylib  # [osx]
+    - if not exist %LIBRARY_LIB%\\kmlbase.lib exit 1  # [win]
     - conda inspect linkages -p $PREFIX libkml  # [not win]
     - conda inspect objects -p $PREFIX libkml  # [osx]
 
