@@ -12,7 +12,7 @@ source:
     - empty_char.patch  # [win and (py35 or py36)]
 
 build:
-  number: 4
+  number: 5
   skip: True  # [win and py36]
   features:
     - vc9  # [win and py27]
@@ -23,13 +23,13 @@ requirements:
     - python  # [win]
     - boost 1.65.1
     - cmake
-    - expat 2.1.*
+    - expat 2.2.*
     - zlib 1.2.11
     - vc 9  # [win and py27]
     - vc 14  # [win and (py35 or py36)]
   run:
     - boost 1.65.1
-    - expat 2.1.*
+    - expat 2.2.*
     - zlib 1.2.11
     - vc 9  # [win and py27]
     - vc 14  # [win and (py35 or py36)]
