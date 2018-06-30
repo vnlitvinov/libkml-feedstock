@@ -17,14 +17,16 @@ as well as several utility libraries for working with other formats.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/libkml-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/libkml-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/libkml-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/libkml-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/libkml-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/libkml-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/libkml-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/libkml-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/libkml-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/libkml-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/libkml-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/libkml-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libkml/badges/version.svg)](https://anaconda.org/conda-forge/libkml)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/libkml/badges/downloads.svg)](https://anaconda.org/conda-forge/libkml)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-libkml-green.svg)](https://anaconda.org/conda-forge/libkml) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/libkml.svg)](https://anaconda.org/conda-forge/libkml) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/libkml.svg)](https://anaconda.org/conda-forge/libkml) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/libkml.svg)](https://anaconda.org/conda-forge/libkml) |
 
 Installing libkml
 =================

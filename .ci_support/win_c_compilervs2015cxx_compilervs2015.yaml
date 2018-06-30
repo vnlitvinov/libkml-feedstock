@@ -1,0 +1,20 @@
+boost:
+- 1.67.0
+c_compiler:
+- vs2015
+cxx_compiler:
+- vs2015
+expat:
+- '2.2'
+pin_run_as_build:
+  boost:
+    max_pin: x.x.x
+  expat:
+    max_pin: x.x
+  zlib:
+    max_pin: x.x
+zip_keys:
+- - c_compiler
+  - cxx_compiler
+zlib:
+- '1.2'
