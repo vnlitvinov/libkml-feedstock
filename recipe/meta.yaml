@@ -12,7 +12,7 @@ source:
     - empty_char.patch  # [win and vc==14]
 
 build:
-  number: 1008
+  number: 1009
   run_exports:
     # no ABI lab result.  Pinning to major-minor as conda-forge has.
     - {{ pin_subpackage('libkml', max_pin='x.x') }}
@@ -36,8 +36,6 @@ test:
     - test -f $PREFIX/lib/libkmlbase.so.1  # [linux]
     - test -f $PREFIX/lib/libkmlbase.dylib  # [osx]
     - if not exist %LIBRARY_LIB%\\kmlbase.lib exit 1  # [win]
-    - conda inspect linkages $PKG_NAME  # [not win]
-    - conda inspect objects $PKG_NAME  # [osx]
 
 about:
   home: https://github.com/libkml/libkml
