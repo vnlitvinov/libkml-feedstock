@@ -23,6 +23,7 @@ requirements:
     - cmake
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
+    - make  # [unix]
   host:
     - boost-cpp
     - expat
