@@ -41,7 +41,7 @@ test:
 
 about:
   home: https://github.com/libkml/libkml
-  license: BSD 3-Clause
+  license: BSD-3-Clause
   license_file: LICENSE
   summary: 'Reference implementation of OGC KML 2.2'
   description: |
