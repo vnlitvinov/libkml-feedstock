@@ -1,0 +1,12 @@
+diff --git a/cmake/External_minizip.cmake b/cmake/External_minizip.cmake
+index 01e7c25..dba0ebf 100644
+--- a/cmake/External_minizip.cmake
++++ b/cmake/External_minizip.cmake
+@@ -1,6 +1,6 @@
+ ExternalProject_Add(MINIZIP
+   PREFIX MINIZIP
+-  URL "http://sourceforge.net/projects/libkml-files/files/1.3.0/minizip.tar.gz/download"
++  URL "https://src.fedoraproject.org/lookaside/extras/libkml/minizip-1.3.0.tar.gz/sha512/4dab3635c09ba3f3832867b4e03ba9d45b6f1e87b98083a50164e6477b765c927fbf5256fe92860b38690f389ef6e07f56cba020b83bfee86e2b30afc816b906/minizip-1.3.0.tar.gz"
+   URL_MD5 d5f74eff74e03e497ea60b2c43623416
+   BINARY_DIR ${CMAKE_BINARY_DIR}/MINIZIP/build
+   DEPENDS ${MINIZIP_DEPENDS}

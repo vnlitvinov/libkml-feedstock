@@ -10,6 +10,7 @@ source:
   patches:
     # Patches for vc14. If this works we should wrapit in a ifdef and send the patch upstream.
     - empty_char.patch  # [win and vc==14]
+    - minizip-url.patch
 
 build:
   number: 1014
@@ -28,6 +29,7 @@ requirements:
     - boost-cpp
     - expat
     - zlib
+    - uriparser
   run:
     - boost-cpp
     - expat
